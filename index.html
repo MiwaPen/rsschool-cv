@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMMARY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="content">
+            <header class="header">
+                <h1>summary</h1><hr>
+                <div class="name">
+                    <h2>First name: Michael</h2>
+                    <h2>Last name: Penzov</h2>
+                </div>
+                <div class="photo">
+                    <img src="img/ava.jpg" alt="photo">
+                </div>
+            </header>
+            <main>
+                <section class="contact">
+                    <h2>Contacts:</h2>
+                    <hr>
+                    <p>| Gmail: gig40594@gmail.com</p>
+                    <p>| Telegram: @Coldstation_021</p>
+                    <p>| Discord: Rendyq#5916</p>
+                </section>
+
+                <section class="task">
+                        <h2>My goal:</h2>
+                        <hr>
+                        <article>
+                            <p>
+                                I want to get a good theoretical and practical knowledge and skills of frontend development to make a good career and become a professional.
+                            </p>
+                        </article>
+                </section>
+
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <hr>
+                    <span>
+                        <h3>Professional skills:</h3>
+                        <ul>
+                            <li>Languages: C++,C#, Java, Delphi,JavaScript;</li>
+                            <li>Have some experience with the Java Spring Framework;</li>
+                            <li>HTML5/CSS3;</li>
+                            <li>Microsoft SQL Server, MongoDB, Postgresql;</li>
+                            <li>Basic skills in Adobe Photoshop.</li>
+                        </ul>
+                    </span>
+                    <span>
+                        <h3>Languages skills:</h3>
+                        <ul>
+                            <li>Russian;</li>
+                            <li>English;</li>
+                            <li>Belarusian.</li>
+                        </ul>
+                    </span>
+                </section>
+
+                <section class="latest_code">
+                    <h2>Exaple of latest code:</h2><hr>
+                    <p>| Some part of my Telegram Bot on NodeJs:</p>
+                    <article>
+                        <pre>
+
+let eventParser = require("../helpers/eventParser");
+let createEventByUserId = require("../helpers/dbmanager").createEventByUserId;
+
+module.exports = function (bot) {
+    bot.command("addevent", async (ctx) => {
+        let event = eventParser(ctx);
+        console.log("EVENT", event);
+        if (event) {
+            try {
+                const createdEvent = await createEventByUserId(event);
+                console.log("ADD EVENT OBJ", createdEvent);
+                try {
+                    await createdEvent.save((e)=> {
+                        console.log(e);
+                    });
+                } catch (e) {
+                    console.log(e);
+                }
+            } catch (e) {
+                console.error(e);
+                await ctx.reply("Oops! Something went wrong.");
+            }
+            await ctx.reply("Event has been successfully added to the database.");
+        } else {
+        await ctx.reply("Oops! Something went wrong. Check /addevent command example message to be used.");
+        }
+    });
+};
+                        </pre>
+                  
+                    </article>
+                </section>
+
+                <section class="education">
+                        <h2>Education:</h2><hr>
+                        <ul>
+                            <li>Graduated from school in 2017;</li>
+                            <li>Now I am a student at the international university "MITSO".</li>
+                        </ul>
+                </section>
+
+            </main>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
