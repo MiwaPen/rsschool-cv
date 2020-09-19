@@ -1,9 +1,7 @@
 ## SUMMARY
 
-
 # Michael Penzov
 ## Contacts:
-
 
 > Gmail: gig40594@gmail.com
 
