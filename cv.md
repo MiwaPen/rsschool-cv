@@ -7,8 +7,6 @@
 
 > Gmail: gig40594@gmail.com
 
-> Mail ru: gig405@mail.ru
-
 > Telegram: @Coldstation_021
 
 > Discord: Rendyq#5916
