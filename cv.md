@@ -11,7 +11,7 @@
 
 ## My goal:
 
-### I want to get a good theoretical and practical knowledge and skills of frondend development for make a good career and become a professional.
+### I want to get a good theoretical and practical knowledge and skills of frontend development for make a good career and become a professional.
 
 ## Skills:
 
